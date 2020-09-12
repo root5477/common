@@ -22,7 +22,7 @@ var wg sync.WaitGroup
 
 func init() {
 	var err error
-	PdnsSqlEngine, err = xorm.NewEngine("mysql", "root:123456@tcp(10.226.133.105:3358)/cdmstest?charset=utf8mb4&parseTime=True")
+	PdnsSqlEngine, err = xorm.NewEngine("mysql", "root:123456@tcp(ip:port）/cdmstest?charset=utf8mb4&parseTime=True")
 	if err != nil {
 		fmt.Println("create mysql engine failed, err is:", err)
 		return
